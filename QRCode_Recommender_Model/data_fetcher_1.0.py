@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 def fetch_api_data():
-    api_url = 'http://127.0.0.1:5000/api/products'  # Change the URL accordingly
+    api_url = 'http://127.0.0.1:5000/api/products' 
     response = requests.get(api_url)
 
     if response.status_code == 200:
@@ -24,7 +24,6 @@ def create_dataframe(api_data):
         'Bahan baku',
         'Kategori',
         'Nama_umkm'
-        # Add more columns if needed
     ]
 
     data = []
@@ -38,7 +37,7 @@ def create_dataframe(api_data):
 def main():
     try:
         api_data = fetch_api_data()
-        save_to_json(api_data)  # Save data to JSON file
+        save_to_json(api_data)
 
         dataframe = create_dataframe(api_data)
         print(dataframe)

@@ -4,6 +4,7 @@ import json
 # URL of the Flask API
 # Replace with the actual URL if deployed elsewhere
 api_url = "http://127.0.0.1:5000/predict"
+# api_url = "http://127.0.0.1:5000/predict_v2"
 
 # Input data for predictions
 input_data = {

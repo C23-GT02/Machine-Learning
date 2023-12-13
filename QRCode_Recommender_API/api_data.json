@@ -1,0 +1,38 @@
+[
+    {
+        "id_produk": "DhPS3TgSdj",
+        "Nama_Produk": "bebek goreng12",
+        "Harga": 40000,
+        "Bahan baku": "blade, despair",
+        "Kategori": "makanan",
+        "Nama_umkm": "uwg",
+        "id_user": "w2YsqnbRFOTiRSFN3AzNMWX97E73"
+    },
+    {
+        "id_produk": "Osg5m7ADk6",
+        "Nama_Produk": "Greenbean Coffe",
+        "Harga": 80000,
+        "Bahan baku": "-",
+        "Kategori": null,
+        "Nama_umkm": "uwg",
+        "id_user": "5H3nI2Krm0ZqX4P3wFevaCMQrgA3"
+    },
+    {
+        "id_produk": "7zw_f5jCDq",
+        "Nama_Produk": "Jamu Leamah",
+        "Harga": 45000,
+        "Bahan baku": "awdwqdsadsa dsadwqe",
+        "Kategori": null,
+        "Nama_umkm": "uwg",
+        "id_user": "hmUFbvSRBqTh7y2NscAPWEIZIgf2"
+    },
+    {
+        "id_produk": "4UGPEfzzVJ",
+        "Nama_Produk": "banana 32",
+        "Harga": 40000,
+        "Bahan baku": "-",
+        "Kategori": "makanan",
+        "Nama_umkm": "uwg",
+        "id_user": "gwi8zx9tExNjdBkBgGQ4Y8ihkQn2"
+    }
+]

@@ -3,7 +3,7 @@ import json
 import pandas as pd
 
 def fetch_api_data():
-    api_url = 'http://127.0.0.1:5000/api/products' 
+    api_url = 'https://tracker-64690.et.r.appspot.com/api/products' 
     response = requests.get(api_url)
 
     if response.status_code == 200:

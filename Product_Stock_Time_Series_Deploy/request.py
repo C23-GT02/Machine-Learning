@@ -3,8 +3,8 @@ import json
 
 # URL of the Flask API
 # Replace with the actual URL if deployed elsewhere
-api_url = "http://127.0.0.1:5000/predict"
-# api_url = "http://127.0.0.1:5000/predict_v2"
+# api_url = "http://127.0.0.1:5000/predict"
+api_url = "http://127.0.0.1:5000/predict_v2"
 
 # Input data for predictions
 input_data = {
@@ -18,10 +18,16 @@ input_data_json = json.dumps({'data': input_data['data']})
 headers = {'Content-Type': 'application/json'}
 response = requests.post(api_url, data=input_data_json, headers=headers)
 
+# Save the response to a JSON file
+output_filename = 'predictions_response.json'
+with open(output_filename, 'w') as json_file:
+    json.dump(response.json(), json_file, indent=4)
+
 # Print the response
 if response.status_code == 200:
     predictions = response.json().get('predictions')
-    print(f'Model Predictions: {predictions}')
+    print(f'Model Predictions for the Next 30 Days: {predictions}')
+    print(f'Response saved to: {output_filename}')
 else:
     print(
         f'Request failed with status code: {response.status_code}, response: {response.text}')

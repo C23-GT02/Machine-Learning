@@ -15,3 +15,23 @@ On this application we use content-based filtering approach which recommends pro
 A time series is a sequence of data points collected or recorded at successive points in time. Time series data is ordered chronologically, and it is often used to analyze trends, patterns, and behaviors over time. Time series analysis involves methods and techniques to understand and model the temporal structure of the data.
 
 To predict future values of product stock based on historical observations, this involves forecasting task. We also use Long Short-Term Memory (LSTM) technique to train the model so that it can capture and remember information over longer sequences.
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/C23-GT02/Machine-Learning.git
+```
+
+2. Create environment and install dependencies
+
+```bash
+cd Machine-Learning
+
+python -m venv env
+
+source env/bin/activate.sh
+
+pip install -r requirements.txt
+```
